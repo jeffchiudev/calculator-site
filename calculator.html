@@ -10,20 +10,40 @@
 <body>
   <div class="container">
     <h1>Calculator</h1>
-    <form id="calculate">
+    <form id="calculate-addition">
       <div class="form-group">
-        <label for="num1">1st number:</label>
-        <input id="num1" class="form-control" type="text">
+        <label for="add1">1st number:</label>
+        <input id="add1" class="form-control" type="text">
       </div>
       <div class="form-group">
-        <label for="num2">2nd number:</label>
-        <input id="num2" class="form-control" type="text">
+        <label for="add2">2nd number:</label>
+        <input id="add2" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn" onclick="add()">Add!</button>
-      <button type="submit" class="btn" onclick="subtract()">Subtract!</button>
-      <button type="submit" class="btn">Multiply!</button>
-      <button type="submit" class="btn">Divide!</button>
+      <div class="radio">
+        <label>
+          <input type="radio" name="calculate-type" value="add">
+          Add!
+        </label>
+      </div>
     </form>
+    <div class="form-group">
+      <label for="sub1">1st number:</label>
+      <input id="sub1" class="form-control" type="text">
+    </div>
+    <div class="form-group">
+      <label for="sub2">2nd number:</label>
+      <input id="sub2" class="form-control" type="text">
+    </div>
+    <form id="calculate-subtract">
+      <div class="radio">
+        <label>
+          <input type="radio" name="calculate-type" value="subtract">
+          Substract!
+        </label>
+      </div>
+    </form>
+      <button type="submit" class="btn">Calculate!</button>
+
     <div id="output">
     </div>
   </div>
